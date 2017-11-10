@@ -1,0 +1,17 @@
+package singleton.basic;
+
+/**
+ * Created by sanguk on 10/11/2017.
+ */
+public class User {
+    private String name;
+
+    public User(String name) {
+        this.name = name;
+    }
+
+    public void print() {
+        Printer printer = Printer.getPrinter();
+        printer.print(this.name + " print using " + printer.toString() + ".");
+    }
+}
